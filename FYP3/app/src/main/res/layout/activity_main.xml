@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_date"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+
+        <ListView
+            android:layout_below="@id/tvDate"
+            android:id="@+id/lvTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"
+            android:paddingTop="10dp"
+            tools:listitem="@layout/li_task"
+            android:clickable="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNoTasks"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_tasks_for_this_date"
+            android:visibility="gone"
+            />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlButtons"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingHorizontal="16dp"
+            android:elevation="5dp"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:contentDescription="@string/todo"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentStart="true"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_access_time_24"
+                android:layout_gravity="end"
+
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:contentDescription="@string/todo"
+                tools:ignore="RelativeOverlap" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

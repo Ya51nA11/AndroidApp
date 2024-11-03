@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Task Tracker</string>
+    <string name="todo">todo</string>
+    <string name="dummy_task">Some task name</string>
+    <string name="dummy_date">23 Mar, 1947</string>
+    <string name="add_task">Add Task</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="no_tasks_for_this_date">No tasks for this date</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>
